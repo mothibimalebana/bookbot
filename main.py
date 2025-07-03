@@ -5,7 +5,7 @@ def get_book_test(book_path):
     return file_contents
 
 def get_word_count(book):
-    words_array = book.split(" ")
+    words_array = book.split()
     word_count = len(words_array)
     print(f"{word_count} words found in the document")
 
