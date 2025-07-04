@@ -14,3 +14,18 @@ def dictionary_count(book):
         word_dictionary[words] += 1
     
     return word_dictionary 
+
+def dict_to_list(dictionary):
+    list = []
+
+    for item in dictionary:
+        list.append(item)
+    
+    print(list)
+    
+    return list
+
+def sort_on(items):
+    for item in items:
+        return item
+
