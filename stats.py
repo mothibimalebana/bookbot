@@ -1,7 +1,7 @@
 def get_word_count(book):
     words_array = book.split()
     word_count = len(words_array)
-    print(f"{word_count} words found in the document")
+    print(f"Found {word_count} total words")
 
 def dictionary_count(book):
     word_dictionary = {}
@@ -19,13 +19,14 @@ def dict_to_list(dictionary):
     list = []
 
     for item in dictionary:
-        list.append(item)
-    
-    print(list)
-    
+        if(item.isalpha()):
+            dictionary_item = {}
+            dictionary_item["char"] = item
+            dictionary_item["num"] = dictionary[item]
+            list.append(dictionary_item)
     return list
 
+
 def sort_on(items):
-    for item in items:
-        return item
+    return items["num"]
 
