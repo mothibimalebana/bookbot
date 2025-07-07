@@ -15,7 +15,7 @@ def print_list(list, book_path):
     # print("============ BOOKBOTpath_to_ =========
     # print(f"Analyzing book found at {bookpath}")
     # print("----------- Word Count ----------")
-    get_word_count(book)
+    # get_word_count(book)                              uncomment this line for word count
     # print("--------- Character Count -------")
     for item in list:
         if(item["char"].isalpha()):
@@ -27,7 +27,7 @@ def main():
         if len(sys.argv) != 2:
             raise Exception("python3 main.py <path_to_book>")
     except Exception as e:
-        print(f"program is used as follows: {e}")
+        print(f"Usage: {e}")
         sys.exit(1)
 
     path_to_book = str(sys.argv[1])
